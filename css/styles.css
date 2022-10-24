@@ -84,7 +84,7 @@ p {
 .page-header,
 p,
 .hero-title {
-  outline: 2px solid greenyellow;
+  outline: 2px solid red;
 } */
 
 .visually-hidden {
@@ -331,7 +331,7 @@ p,
   background: #2f303a;
 }
 
-.footer-logo {
+.logo.footer-logo {
   padding-top: 60px;
   margin-bottom: 20px;
 }
@@ -352,6 +352,11 @@ p,
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
 }
+
+.footer-list-item:not( :last-child) {
+	margin-bottom: 9px;
+}
+
 
 .address,
 .logo-studio-footer {
