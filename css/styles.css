@@ -51,13 +51,11 @@ body {
 }
 
 .logo {
-	display: flex;
-
+  display: flex;
 }
 
-
 .hero-title {
-	padding-top: 200px;
+  padding-top: 200px;
 }
 
 .div-header {
@@ -73,9 +71,9 @@ p {
   margin-bottom: 0;
 }
 
-/* .section {
+.section {
   margin-bottom: 94px;
-} */
+}
 
 /* h2,
 .list,
@@ -106,6 +104,24 @@ p,
   color: var(--fone-color);
 }
 
+.peculiarities-item {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 270px;
+}
+
+.peculiarities-list {
+  display: flex;
+}
+
+.peculiarities-title {
+  margin-bottom: 10px;
+}
+
+.peculiarities-list .peculiarities-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .logo,
 .main-nav-link,
 .contacts,
@@ -124,6 +140,14 @@ p,
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
+}
+
+.work-list {
+  display: flex;
+}
+
+.work-list-item:not( :last-child) {
+  margin-right: 30px;
 }
 
 .logo {
@@ -200,7 +224,7 @@ p,
   cursor: pointer;
   padding: 10px 32px;
   margin-top: 30px;
-	margin-bottom: 200px;
+  margin-bottom: 200px;
 }
 
 .peculiarities-title {
