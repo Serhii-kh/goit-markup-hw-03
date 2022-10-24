@@ -19,8 +19,8 @@
   </head>
   <body>
     <!-- header -->
-    <header class="page-header">
-      <div class="container">
+       <header class="page-header">
+      <div class="container div-header">
         <!-- logo -->
         <a class="logo" href="./index.html"
           ><span class="logo-web">Web</span>
@@ -28,24 +28,24 @@
         </a>
         <!-- навігація хедера -->
         <nav class="main-nav">
-          <ul class="list">
-            <li>
+          <ul class="list main-nav-list">
+            <li class="nav-item">
               <a class="main-nav-link" href="./index.html">Студія</a>
             </li>
-            <li>
+            <li class="nav-item">
               <a class="main-nav-link current" href="./portfolio.html">Портфоліо</a>
             </li>
-            <li><a class="main-nav-link" href="">Контакти</a></li>
+            <li class="nav-item"><a class="main-nav-link" href="">Контакти</a></li>
           </ul>
         </nav>
         <!-- contacts -->
-        <ul class="list">
-          <li>
+        <ul class="list contacts-list">
+          <li class="nav-item">
             <a class="contacts" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="nav-item">
             <a class="contacts" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
@@ -53,20 +53,20 @@
     </header>
     <!-- main -->
     <main class="main-portfolio">
-      <section class="main-portfolio-section">
+      <section class="section main-portfolio-section">
         <div class="container">
           <h1 class="visually-hidden">Портфоліо студії</h1>
           <!--nav of page "Portfolio" -->
           <nav class="nav-buttons">
-            <ul class="list">
-              <li><button type="button" class="button">Усі</button></li>
-              <li><button type="button" class="button">Веб-сайти</button></li>
-              <li><button type="button" class="button">Додатки</button></li>
-              <li><button type="button" class="button">Дизайн</button></li>
-              <li><button type="button" class="button">Маркетинг</button></li>
+            <ul class="list filter-list">
+              <li class="filter-item"><button type="button" class="button">Усі</button></li>
+              <li class="filter-item"><button type="button" class="button">Веб-сайти</button></li>
+              <li class="filter-item"><button type="button" class="button">Додатки</button></li>
+              <li class="filter-item"><button type="button" class="button">Дизайн</button></li>
+              <li class="filter-item"><button type="button" class="button">Маркетинг</button></li>
             </ul>
           </nav>
-          <ul class="list">
+          <ul class="list portfolio-list">
             <li class="portfolio-list-item">
               <a class="portfolio-list-link" href=""
                 ><img
@@ -78,7 +78,7 @@
                 <p class="portfolio-discription">Веб-сайт</p></a
               >
             </li>
-            <li>
+            <li class="portfolio-list-item">
               <a href="" class="portfolio-list-link">
                 <img
                   src="./images/poster.jpg"
@@ -91,7 +91,7 @@
                 <p class="portfolio-discription">Дизайн</p></a
               >
             </li>
-            <li>
+            <li class="portfolio-list-item">
               <a href="" class="portfolio-list-link">
                 <img
                   src="./images/restouran.jpg"
@@ -102,7 +102,7 @@
                 <p class="portfolio-discription">Додаток</p></a
               >
             </li>
-            <li>
+            <li class="portfolio-list-item">
               <a class="portfolio-list-link" href="">
                 <img
                   src="./images/prime.jpg"
@@ -113,7 +113,7 @@
                 <p class="portfolio-discription">Маркетинг</p></a
               >
             </li>
-            <li>
+            <li class="portfolio-list-item">
               <a class="portfolio-list-link" href="">
                 <img
                   src="./images/boxes.jpg"
@@ -124,7 +124,7 @@
                 <p class="portfolio-discription">Додаток</p></a
               >
             </li>
-            <li>
+            <li class="portfolio-list-item">
               <a class="portfolio-list-link" href="">
                 <img
                   src="./images/no-Borders.jpg"
@@ -135,7 +135,7 @@
                 <p class="portfolio-discription">Веб-сайт</p></a
               >
             </li>
-            <li>
+            <li class="portfolio-list-item">
               <a class="portfolio-list-link" href="">
                 <img
                   src="./images/lim-editiom.jpg"
@@ -146,7 +146,7 @@
                 <p class="portfolio-discription">Дизайн</p></a
               >
             </li>
-            <li>
+            <li class="portfolio-list-item">
               <a class="portfolio-list-link" href=""
                 ><img
                   src="./images/lab.jpg"
@@ -157,7 +157,7 @@
                 <p class="portfolio-discription">Маркетинг</p></a
               >
             </li>
-            <li>
+            <li class="portfolio-list-item">
               <a class="portfolio-list-link" href="">
                 <img
                   src="./images/growing-buisness.jpg"
@@ -175,11 +175,11 @@
     <!-- footer -->
     <footer class="footer">
       <div class="container">
-        <a class="logo" href="./index.html"
+        <a class="logo footer-logo" href="./index.html"
           ><span class="logo-web">Web</span>
           <span class="logo-studio-footer">Studio</span>
         </a>
-        <address>
+        <address class="footer-address">
           <ul class="list">
             <li>
               <a

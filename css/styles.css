@@ -265,14 +265,15 @@ p,
 }
 
 .button {
-  font-family: inherit;
   font-weight: 500;
   background: #f5f4fa;
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
   letter-spacing: inherit;
+  padding: 6px 22px;
   border-radius: 4px;
+  border: none;
   cursor: pointer;
 }
 
@@ -287,10 +288,32 @@ p,
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-color);
+
+	padding-left: 24px;
+	margin-top: 20px;
+	margin-bottom: 4px;
 }
 
 .portfolio-discription {
   line-height: 1.875;
+	padding-left: 24px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.filter-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 94px;
+  margin-bottom: 34px;
+}
+
+.filter-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .footer {
