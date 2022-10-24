@@ -18,6 +18,14 @@ body {
   list-style: none;
 }
 
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -63,14 +71,6 @@ body {
   align-items: center;
 }
 
-h1,
-h2,
-h3,
-p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 .section {
   margin-bottom: 94px;
 }
@@ -105,8 +105,6 @@ p,
 }
 
 .peculiarities-item {
-  display: flex;
-  flex-wrap: wrap;
   min-width: 270px;
 }
 
@@ -114,12 +112,20 @@ p,
   display: flex;
 }
 
+.peculiarities-list .peculiarities-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .peculiarities-title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
   margin-bottom: 10px;
 }
 
-.peculiarities-list .peculiarities-item:not(:last-child) {
-  margin-right: 30px;
+.peculiarities-discription {
+  font-size: 14px;
+  line-height: 1.7;
 }
 
 .logo,
@@ -142,11 +148,42 @@ p,
   text-align: center;
 }
 
+.team-list-discription,
+.team-list-title {
+  font-size: 16px;
+  text-align: center;
+}
+
+.team-list-discription {
+  margin-bottom: 30px;
+}
+
+.team-list-title {
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team {
+  line-height: 1.2;
+  background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .work-list {
   display: flex;
 }
 
-.work-list-item:not( :last-child) {
+.work-list-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -227,17 +264,6 @@ p,
   margin-bottom: 200px;
 }
 
-.peculiarities-title {
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-}
-
-.peculiarities-discription {
-  font-size: 14px;
-  line-height: 1.7;
-}
-
 .button {
   font-family: inherit;
   font-weight: 500;
@@ -248,20 +274,6 @@ p,
   letter-spacing: inherit;
   border-radius: 4px;
   cursor: pointer;
-}
-
-.team {
-  line-height: 1.2;
-  background-color: #f5f4fa;
-  /* padding: 186px 215px 94px; */
-}
-
-.team-list-discription,
-.team-list-title {
-  font-size: 16px;
-}
-.team-list-title {
-  font-weight: 500;
 }
 
 .nav-buttons button:hover,
@@ -283,6 +295,15 @@ p,
 
 .footer {
   background: #2f303a;
+}
+
+.footer-logo {
+  padding-top: 60px;
+  margin-bottom: 20px;
+}
+
+.footer-address {
+  padding-bottom: 60px;
 }
 
 .footer-link:hover,
