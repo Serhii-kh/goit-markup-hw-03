@@ -3,6 +3,7 @@
   --main-color: #212121;
   --fone-color: #757575;
   --main-bg-color: #ffffff;
+	--border-color: #EEEEEE;
 }
 
 body {
@@ -18,6 +19,10 @@ h3,
 p {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+img {
+  display: block;
 }
 
 .list {
@@ -80,13 +85,15 @@ p {
   padding-bottom: 25px;
 }
 
-.hero-title {
-  padding-top: 200px;
-}
-
-.hero-section {
+.hero-section.section {
   background: #2f303a;
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.section {
+  outline: 2px solid greenyellow;
 }
 
 .hero-title {
@@ -113,7 +120,6 @@ p {
   cursor: pointer;
   padding: 10px 32px;
   margin-top: 30px;
-  margin-bottom: 200px;
 }
 
 .div-header {
@@ -136,7 +142,8 @@ p {
 
 .peculiarities-discription,
 .team-list-discription,
-.portfolio-discription {
+.portfolio-discription,
+.nav-item > .contacts {
   color: var(--fone-color);
 }
 
@@ -164,15 +171,13 @@ p {
   line-height: 1.7;
 }
 
-.peculiarities.section,
-.our-work.section,
-.team.section {
+.section {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.peculiarities.section,
-.team.section {
-  padding-top: 94px;
+.our-work.section {
+  padding-top: 0;
 }
 
 .logo,
@@ -221,10 +226,17 @@ p {
 
 .team-list {
   display: flex;
+  background-color: var(--main-bg-color);
 }
 
 .team-list-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.team-list-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team {
@@ -279,6 +291,8 @@ p {
 .nav-buttons button:focus {
   background-color: var(--focus-color);
   color: var(--main-bg-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-list-title {
@@ -290,12 +304,17 @@ p {
   padding-left: 24px;
   margin-top: 20px;
   margin-bottom: 4px;
+	border-left: 1px solid var(--border-color);
+	border-right: 1px solid var(--border-color);
 }
 
 .portfolio-discription {
   line-height: 1.875;
   padding-left: 24px;
   padding-bottom: 20px;
+	border-left: 1px solid var(--border-color);
+	border-right: 1px solid var(--border-color);
+	border-bottom: 1px solid var(--border-color);
 }
 
 .portfolio-list {
@@ -304,14 +323,9 @@ p {
   gap: 30px;
 }
 
-.portfolio-list-item {
-  border-bottom: 1px solid #eeeeee;
-}
-
 .filter-list {
   display: flex;
   justify-content: center;
-  margin-top: 94px;
   margin-bottom: 34px;
 }
 
@@ -321,16 +335,13 @@ p {
 
 .footer {
   background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logo.footer-logo {
-  padding-top: 60px;
   padding-bottom: 0;
   margin-bottom: 20px;
-}
-
-.footer-address {
-  padding-bottom: 60px;
 }
 
 .footer-link:hover,
